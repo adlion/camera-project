@@ -10,7 +10,7 @@ import { ToastrService } from './services/toastr.service.ts';
 export class AppComponent implements OnInit, OnDestroy {
   constructor(private toastrService: ToastrService) {}
 
-  title = 'camera-fe';
+  title = 'Camera Inventroy';
   toastrData:any={}
   toastrSubscription: Subscription;
   ngOnInit() {
