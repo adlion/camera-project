@@ -30,8 +30,12 @@
   margin-left: 1em;
 }
 
+.btn-search:active{
+  transform: scale(1.05);
+}
+
 .search-options-wrapper{
-    margin-top: 0.5em;
+    padding: 0.5em 0;
 }
 
 .search-type {
@@ -90,4 +94,12 @@
   
   #resolution_id{
     margin-top: 0.5em;
+  }
+
+  @media (min-width: 60rem) {
+    .search-wrapper,
+    .search-options-wrapper{
+      max-width: 60em;
+      margin: 0 auto;
+    }
   }
