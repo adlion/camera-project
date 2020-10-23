@@ -1,0 +1,42 @@
+.comp-wrapper {
+  padding: 1em 1em 0em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffe600;
+}
+
+.camera-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 18em;
+  margin: 1em;
+  padding: 0.3em;
+  border: 2px solid black;
+  border-radius: 0.3em;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+.camera__img {
+  width: 100%;
+  height: auto;
+  max-height: 18em;
+}
+
+.btn-delete {
+  width: 100%;
+  background-color: rgb(179, 8, 8);
+  border: none;
+  border-radius: 0.3em;
+  color: #fff;
+  padding: 0.2em;
+  font-size: 1.3em;
+  margin: 1em 0 0.5em;
+}
+
+#resolution_id{
+  margin-top: 0.5em;
+}

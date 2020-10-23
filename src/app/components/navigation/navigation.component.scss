@@ -1,0 +1,47 @@
+.comp-wrapper {
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+  height: 3.4em;
+  max-height: 3.4em;
+  padding: 0 0.3em 0 0.3em;
+  z-index: 100;
+}
+
+.nav-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black; //rgb(245, 240, 240);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.nav-icon {
+  font-size: 1.8em;
+  color: rgb(153, 153, 165);
+}
+
+.nav-active {
+  color: #ffe600;
+}
+
+@media (min-width: 60rem) {
+  .comp-wrapper {
+    position: fixed;
+    border-radius: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-bottom: 1em;
+    padding: 0;
+  }
+
+  .nav-wrapper{
+    border-radius: 0;
+  }
+}

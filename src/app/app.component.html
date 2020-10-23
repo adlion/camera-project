@@ -1,0 +1,11 @@
+<app-nav></app-nav>
+<div class="nav-spacer">
+  <div
+    class="toastr"
+    *ngIf="toastrData?.show"
+    [ngStyle]="{ background: toastrData.color }"
+  >
+    <span> {{ toastrData.message }}</span>
+  </div>
+  <router-outlet></router-outlet>
+</div>

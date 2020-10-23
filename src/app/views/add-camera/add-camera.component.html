@@ -1,0 +1,25 @@
+<form class="comp-wrapper"  [formGroup]="cameraFG"
+(ngSubmit)="onSubmitAddCamera()">
+  <h2 class="title">Add new Camera</h2>
+  <div class="section-wrapper">
+    <div class="input-wrapper">
+      <label for="name_id">Name:</label>
+      <input type="text" id="name_id" formControlName="nameFC" />
+    </div>
+    <div class="input-wrapper">
+      <label for="model_id">Model:</label>
+      <input type="text" id="model_id" formControlName="modelFC" />
+    </div>
+  </div>
+  <div class="section-wrapper">
+    <div class="input-wrapper">
+      <label for="resolution_id">Resolution:</label>
+      <input type="text" id="resolution_id"  formControlName="resolutionFC"/>
+    </div>
+    <div class="input-wrapper">
+      <label for="ip_id">IP:</label>
+      <input type="text" id="ip_id" formControlName="ipFC" />
+    </div>
+  </div>
+  <button type="submit" class="btn-add">Add Camera</button>
+</form>

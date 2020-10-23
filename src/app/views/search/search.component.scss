@@ -1,0 +1,93 @@
+.comp-wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 1em 0.5em 0.5em;
+  z-index: 90;
+}
+
+.search-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-field {
+  width: 100%;
+  padding: 0.8em;
+  flex-grow: 1;
+  border-radius: 0.5em;
+}
+
+.btn-search {
+  border: none;
+  padding: 0.3em;
+  background-color: #ffe600;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+.search-options-wrapper{
+    margin-top: 0.5em;
+}
+
+.search-type {
+    margin-right: 0.5em;
+    text-align: center;
+  &__title {
+    white-space: nowrap;
+  }
+}
+
+.search-options{
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-result-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8em;
+}
+
+.camera-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 18em;
+    margin: 1em;
+    padding: 0.3em;
+    border: 2px solid black;
+    border-radius: 0.3em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .camera__img {
+    width: 100%;
+    height: auto;
+    max-height: 18em;
+  }
+  
+  .btn-delete {
+    width: 100%;
+    background-color: rgb(179, 8, 8);
+    border: none;
+    border-radius: 0.3em;
+    color: #fff;
+    padding: 0.2em;
+    font-size: 1.3em;
+    margin: 1em 0 0.5em;
+  }
+  
+  #resolution_id{
+    margin-top: 0.5em;
+  }

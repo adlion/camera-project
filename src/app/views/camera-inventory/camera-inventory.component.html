@@ -1,0 +1,15 @@
+<div class="comp-wrapper">
+  <ng-container *ngFor="let camera of respData;let i = index;">
+    <div class="camera-wrapper">
+      <img
+        class="camera__img"
+        src="../../../assets/img-not-found.png"
+        alt="Image Not Found"
+      />
+      <h3 id="name_id">{{ camera.name }}&nbsp;&nbsp;{{ camera.model }}</h3>
+      <h4 id="resolution_id">Resolution:&nbsp;{{ camera.resolution }}</h4>
+      <h4 class="ip_id">IP:&nbsp;{{ camera.ipAddress }}</h4>
+      <button (click)="onClickDelete(camera.id,i)" class="btn-delete">Delete</button>
+    </div>
+  </ng-container>
+</div>

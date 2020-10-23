@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  background-color: #ffe600;
+  flex-direction: column;
+  font-family: "Hind",Arial, Helvetica, sans-serif;
+}
+
+.app-root {
+  position: relative;
+  min-width: 314px;
+  height: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}

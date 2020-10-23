@@ -1,0 +1,66 @@
+<div class="comp-wrapper" [formGroup]="searchFG">
+  <div class="search-wrapper">
+    <input class="search-field" type="text" formControlName="searchFC" />
+    <button class="btn-search" (click)="onClickSearch()">Search</button>
+  </div>
+  <div class="search-options-wrapper">
+    <h4 class="search-type__title">Search By:</h4>
+    <div class="search-options">
+      <label for="name_id">
+        Name
+        <input
+          type="radio"
+          formControlName="radioFC"
+          id="name_id"
+          value="name"
+          checked
+        />
+      </label>
+      <label for="model_id">
+        Model
+        <input
+          type="radio"
+          formControlName="radioFC"
+          id="model_id"
+          value="model"
+        />
+      </label>
+      <label for="resolution_id">
+        Resolution
+        <input
+          type="radio"
+          formControlName="radioFC"
+          id="resolution_id"
+          value="resolution"
+        />
+      </label>
+      <label for="ip_id">
+        IP
+        <input
+          type="radio"
+          formControlName="radioFC"
+          id="ip_id"
+          value="ip"
+        />
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="search-result-wrapper">
+  <ng-container *ngFor="let camera of respData; let i = index">
+    <div class="camera-wrapper">
+      <img
+        class="camera__img"
+        src="../../../assets/img-not-found.png"
+        alt="Image Not Found"
+      />
+      <h3 id="name_id">{{ camera.name }}&nbsp;&nbsp;{{ camera.model }}</h3>
+      <h4 id="resolution_id">Resolution:&nbsp;{{ camera.resolution }}</h4>
+      <h4 class="ip_id">IP:&nbsp;{{ camera.ipAddress }}</h4>
+      <button (click)="onClickDelete(camera.id, i)" class="btn-delete">
+        Delete
+      </button>
+    </div>
+  </ng-container>
+</div>
