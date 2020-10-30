@@ -8,7 +8,7 @@ Feel free to use without any restriction.
 
 Frontend can be found online at: https://adlion.github.io/camera-project/
 
-There is not any content in there due to missing backend.
+There is no any content in there due to missing backend.
 
 In order to run please clone the repository and then:
 
