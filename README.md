@@ -1,4 +1,4 @@
-This project is the interface for spring-camera reository. 
+This project is the interface for spring-camera reository.
 It is my first project using Java as backend and Mongo as database
 
 This was developed all (Frontend and Backend in 24 hours) as a challenge from one of my friends.
