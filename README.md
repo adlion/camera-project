@@ -10,6 +10,8 @@ Frontend can be found online at: https://adlion.github.io/camera-project/
 
 There is no any content in there due to missing backend.
 
+The backend is located at : `https://github.com/adlion/spring-camera`
+
 In order to run please clone the repository and then:
 
 1. `npm install`
